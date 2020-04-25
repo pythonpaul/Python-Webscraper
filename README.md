@@ -12,7 +12,7 @@ https://requests.readthedocs.io/en/master/
 Beautiful Soup Documentation:
 https://www.crummy.com/software/BeautifulSoup/bs4/doc/#
 
-Running The Program:
+Running The Text Scraper Program:
 
 1. In get_text.py replace the 'site' variable with a website of choice <br>
 2. Run the script
