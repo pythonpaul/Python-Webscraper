@@ -8,9 +8,10 @@ Running The Text Scraper Program:
 
 Text data output is saved to a "text_data.txt" file
 
+
 <b>Covid19 Text Corpus: </b> https://drive.google.com/open?id=1YS8UJ-Qeamdo9aAcpIgUqVb0ohrKijHy
 
-Requires requests, and beautiful soup 4 which you can install with pip by running the following commands
+Requires requests, and beautiful soup 4
 
 pip install requests <br>
 pip install bs4
