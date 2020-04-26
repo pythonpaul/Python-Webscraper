@@ -1,5 +1,12 @@
 # Python-Web-Text-Scraper
-A Python application that retrives clean text data from websites.  
+A Python console application that retrives clean text data from multiple websites at once and saves the data to a text file. 
+
+Running The Text Scraper Program:
+
+1. Run the script
+2. Enter a search keyword - try "emoji" ;)
+
+Text data output is saved to a "text_data.txt" file
 
 Requires requests, and beautiful soup 4 which you can install with pip by running the following commands
 
@@ -12,8 +19,4 @@ https://requests.readthedocs.io/en/master/
 Beautiful Soup Documentation:
 https://www.crummy.com/software/BeautifulSoup/bs4/doc/#
 
-Running The Text Scraper Program:
-
-1. In get_text.py replace the 'site' variable with a website of choice <br>
-2. Run the script
 
