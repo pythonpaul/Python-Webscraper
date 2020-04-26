@@ -19,5 +19,5 @@ https://requests.readthedocs.io/en/master/
 Beautiful Soup Documentation:
 https://www.crummy.com/software/BeautifulSoup/bs4/doc/#
 
-Example result text scraped from webpages on "covid19" keyword searches
+Example result text on "covid19" keyword searches: <br>
 <b>Covid19 Text Corpus: </b> https://drive.google.com/open?id=1YS8UJ-Qeamdo9aAcpIgUqVb0ohrKijHy
