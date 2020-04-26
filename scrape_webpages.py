@@ -1,7 +1,6 @@
 import requests
 import webbrowser
 from bs4 import BeautifulSoup
-from lxml import html
 
 def scan_links():
 
