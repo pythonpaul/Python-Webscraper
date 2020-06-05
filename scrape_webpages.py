@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import re
 
 def scan_links():
 
@@ -31,8 +32,6 @@ def scan_links():
 
     site_array = []
 
-    import re
-
     for i in range(0, len(array)):
         curr = array[i]
         if "http" in curr:
@@ -41,9 +40,16 @@ def scan_links():
             site_array.append(url[0])
     scan_site(site_array)
 
+
 def scan_site(x):
     print("site_array: ")
     print(x)
+    import os
+
+    file_name = input('Enter a file name to store text data: ')
+    file_name = file_name + '.txt'
+    file_path = './' + file_name
+
     for i in x:
 
         print("type of url array: " + str(type(x)))
@@ -65,16 +71,14 @@ def scan_site(x):
         #print(txt)
 
         import sys
-        import os
 
-        file_path = './text_data.txt'
 
         if not os.path.exists(file_path):
-            f = open('text_data.txt', 'w+')
+            f = open(file_name, 'w+')
             f.write(txt)
             f.close()
         if os.path.exists(file_path):
-            f = open('text_data.txt', 'a+')
+            f = open(file_name, 'a+')
             f.write(txt)
 
 scan_links()
