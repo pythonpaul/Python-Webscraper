@@ -3,12 +3,17 @@ from bs4 import BeautifulSoup
 import requests
 
 def scan_links():
-  i = input("Enter search query: ")
-  google_search = "https://www.google.com/search?q="+i
-
-  get_links = requests.get(google_search, timeout=5)
-
-  print(get_links)
+ 
+  google_search = "https://www.google.com/search?q="+"samsung"
+  reddit_posts = "https://www.reddit.com/r/GalaxyS21/"
+  i = input("google (g) reddit (r)")
+  if i == "g":
+    get_links = requests.get(google_search, timeout=5)
+  elif i == "r":
+    get_links = requests.get(reddit_posts, timeout=5)
+  else:
+    scan_links()
+    
   soup = BeautifulSoup(get_links.content, 'html.parser')
   a = soup.find_all('div')
   a = str(a)
